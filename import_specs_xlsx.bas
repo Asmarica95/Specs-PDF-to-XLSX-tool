@@ -38,6 +38,9 @@ On Error GoTo error_handle
     Application.ScreenUpdating = True
     Application.DisplayAlerts = True
     
+    'go to the next module
+    Call table_processing.table_processing
+    
     'it is important to exit the sub before the error handling block or it will be executed
     Exit Sub
 
